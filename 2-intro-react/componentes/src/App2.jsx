@@ -52,19 +52,65 @@ const data = [
   },
 ];
 
-function App2() {
+/* function App2() {
   return (
     <ul>
       {data.map((card) => (
-        <Card fullName={card.fullName} job={card.job} email={card.email} />
+        <Card
+          key={card.id}
+          fullName={card.fullName}
+          job={card.job}
+          email={card.email}
+        />
       ))}
 
-      {/* <Card
+      <Card
         fullName={data[0].fullName}
         job={data[0].job}
         email={data[0].email}
-      /> */}
+      />
     </ul>
   );
+} */
+
+/* function App2() {
+  return (
+    <div>
+    {[<h1>Hola</h1>, <h2>mundo</h2>, <p>!</p>]}
+    </div>
+  )
+} */
+
+//Cheat sheet de lo que se ve y no se ve
+/* function App2() {
+  return (
+    <>
+      <ul>
+        <li>false: {false && 'hola'}</li>
+        <li>undefined: {undefined}</li>
+        <li>undefined: {undefined && 'hola'}</li>
+        <li>null: {null}</li>
+        <li>null: {null && 'hola'}</li>
+        <li>NaN: {NaN}</li>
+        <li>Cero: {0}</li>
+        <li>String Vacío: {""}</li>
+      </ul>
+      <ul>
+        <li>true: {true && 'hola'}</li>
+        <li>Numero: {6}</li>
+        <li>String: {"hola"}</li>
+      </ul>
+    </>
+  );
+} */
+
+function App2() {
+  let isLoggedIn = false
+  return (
+    <p>
+      {isLoggedIn ? 'Está loggeado' : 'No está loggeado'}
+    </p>
+  )
 }
+
 export default App2;
