@@ -1,0 +1,12 @@
+.wrapper { /*container*/
+  padding: 1.5rem;
+  font-family: sans-serif;
+  background-color: hsl(240, 48%, 81%);
+  color: hsl(240, 48%, 10%);
+  border-radius: 1rem;
+  border-left: solid 2px hsl(240, 48%, 60%);
+}
+
+.title {
+  text-decoration: underline;
+}
