@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import styles from './StickerPad.module.css'
-import { getSticker } from './stickers.data';
+import { getSticker } from './stickers.data.js';
+import styles from './StickerPad.module.css';
 import Sticker from './Sticker.jsx';
 
 function StickerPad() {
@@ -12,6 +12,9 @@ function StickerPad() {
       ...stickerData,
       x: event.clientX,
       y: event.clientY,
+      // key: `${stickerData.src}-${event.clientX}-${event.clientY}`
+      // key: `${Math.random()}-${stickerData.src}-${event.clientX}-${event.clientY}`
+      key: Math.random()
     }
     const nextStickers = [...stickers, newSticker];
     console.log(nextStickers)
@@ -21,7 +24,7 @@ function StickerPad() {
   return (
     <button className={styles.stickerPad} onClick={addSticker} >
       {stickers.map((sticker) => (
-        <Sticker srcProp={sticker.src} posX={sticker.x} posY={sticker.y}/>
+        <Sticker key={sticker.key} srcProp={sticker.src} posX={sticker.x} posY={sticker.y}/>
       ))}
     </button>
   )
