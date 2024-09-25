@@ -1,21 +1,27 @@
 import { useState } from 'react'
 import styles from './StickerPad.module.css'
+import { getSticker } from './stickers.data';
+import Sticker from './Sticker.jsx';
 
 function StickerPad() {
   const [stickers, setStickers] = useState([]);
 
-  function addSticker() {
+  function addSticker(event) {
+    const stickerData = getSticker()
     const newSticker = {
-      src: "./src/assets/sticker-1.png"
+      ...stickerData,
+      x: event.clientX,
+      y: event.clientY,
     }
     const nextStickers = [...stickers, newSticker];
+    console.log(nextStickers)
     setStickers(nextStickers)
   }
 
   return (
     <button className={styles.stickerPad} onClick={addSticker} >
       {stickers.map((sticker) => (
-        <img src={sticker.src} />
+        <Sticker srcProp={sticker.src} posX={sticker.x} posY={sticker.y}/>
       ))}
     </button>
   )
