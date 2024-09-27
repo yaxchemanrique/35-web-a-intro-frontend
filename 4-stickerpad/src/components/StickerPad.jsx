@@ -5,7 +5,7 @@ import Sticker from './Sticker.jsx';
 
 function StickerPad() {
   const [stickers, setStickers] = useState([]);
-
+  // let stickers = []
   function addSticker(event) {
     const stickerData = getSticker()
     const newSticker = {
