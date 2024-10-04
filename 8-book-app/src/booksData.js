@@ -9,6 +9,7 @@ const BOOKS_DATA = [
       imgSrc: '/bookCovers/PercyJackson.jpg',
       alt: "Cover of Percy Jackson & the Olympians: The Lightning Thief by Rick Riordan featuring a young boy holding a sword while standing in the ocean.",
     },
+    id: 0,
   },
   {
     title: "The School for Good and Evil",
@@ -20,6 +21,7 @@ const BOOKS_DATA = [
       imgSrc: '/bookCovers/the-school-for-good-and-evil.jpg',
       alt: "Cover of The School for Good and Evil by Soman Chainani with two characters, one in light clothing and one in dark, standing back-to-back.",
     },
+    id: 1,
   },
   {
     title: "Miss Peregrine's Home for Peculiar Children",
@@ -31,6 +33,7 @@ const BOOKS_DATA = [
       imgSrc: '/bookCovers/miss-peregrine-s-home-for-peculiar-children.jpg',
       alt: "Cover of Miss Peregrine's Home for Peculiar Children by Ransom Riggs showing a vintage photo of a girl levitating above the ground.",
     },
+    id: 2,
   },
   {
     title: "Artemis Fowl",
@@ -42,6 +45,7 @@ const BOOKS_DATA = [
       imgSrc: '/bookCovers/Artemis-Fowl.jpg',
       alt: "Cover of Artemis Fowl by Eoin Colfer, featuring a boy in a suit with glowing glasses and a mysterious golden background.",
     },
+    id: 3,
   },
   {
     title: "The Hobbit",
@@ -53,6 +57,7 @@ const BOOKS_DATA = [
       imgSrc: '/bookCovers/the-hobbit.jpg',
       alt: "Cover of The Hobbit by J.R.R. Tolkien, depicting Bilbo Baggins walking through a lush, green landscape with mountains in the background.",
     },
+    id: 4,
   },
   {
     title: "Howl's Moving Castle",
@@ -64,6 +69,7 @@ const BOOKS_DATA = [
       imgSrc: '/bookCovers/Howl-s-Moving-Castle.png',
       alt: "Cover of Howl's Moving Castle by Diana Wynne Jones showing a whimsical, steampunk-like castle with legs, moving through a magical landscape.",
     },
+    id: 5,
   },
   {
     title: "The Magicians",
@@ -75,6 +81,7 @@ const BOOKS_DATA = [
       imgSrc: '/bookCovers/the-magicians.jpg',
       alt: "Cover of The Magicians by Lev Grossman, showing a solitary tree against a foggy background, symbolizing mystery and magic.",
     },
+    id: 6,
   },
   {
     title: "Charlie and the Chocolate Factory",
@@ -86,6 +93,7 @@ const BOOKS_DATA = [
       imgSrc: '/bookCovers/charlie-and-the-chocolate-factory.jpg',
       alt: "Cover of Charlie and the Chocolate Factory by Roald Dahl showing Willy Wonka and Charlie standing amidst a magical world of candy.",
     },
+    id: 7,
   },
   {
     title: "The House with Chicken Legs",
@@ -97,6 +105,7 @@ const BOOKS_DATA = [
       imgSrc: '/bookCovers/The-House-with-Chicken-Legs.jpg',
       alt: "Cover of The House with Chicken Legs by Sophie Anderson showing a house with literal chicken legs standing in a magical, starry landscape.",
     },
+    id: 8,
   },
   {
     title: "Nevermoor: The Trials of Morrigan Crow",
@@ -108,6 +117,7 @@ const BOOKS_DATA = [
       imgSrc: '/bookCovers/Nevermoor.jpg',
       alt: "Cover of Nevermoor: The Trials of Morrigan Crow by Jessica Townsend, featuring a young girl in a cloak standing in front of a whimsical, magical city.",
     },
+    id: 9,
   }
 ];
 

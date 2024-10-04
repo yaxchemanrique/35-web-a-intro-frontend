@@ -1,8 +1,12 @@
-import React from 'react'
+import BOOKS_DATA from "../booksData"
+import BookListContainer from "../components/BookListContainer"
 
 function BookList() {
   return (
-    <h1>BookList</h1>
+    <main>
+      <h1>BookList</h1>
+      <BookListContainer bookArr={BOOKS_DATA}/>
+    </main>
   )
 }
 
