@@ -1,0 +1,30 @@
+/* root.css en index.html */
+
+:root {
+  --clr-accent-400: #636363;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* [component].module.css en el archivo de cada componente */
+
+p {
+  background-color: var(--clr-accent-400);
+}
